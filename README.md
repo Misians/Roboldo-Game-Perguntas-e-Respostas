@@ -153,9 +153,18 @@ O trabalho de pesquisa e desenvolvimento do **Roboldo** está estruturado em **5
 
 ---
 
-## 🤝 Como Contribuir
+## 👥 Cargos e Como Contribuir
 
-1. Confira as [Issues abertas](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues) e verifique a frente de trabalho atribuída a você.
+A equipe do **Roboldo** é estruturada em três cargos oficiais (veja a documentação completa de governança e atribuições em **[GOVERNANCE.md](./GOVERNANCE.md)**):
+
+| Cargo | Label de Filtro nas Issues | Papel no Projeto |
+| :--- | :--- | :--- |
+| 🎓 **Professores** | [`cargo: professor`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+professor%22) | Coordenação, orientação docente, definição de diretrizes e aprovação final. |
+| 🔬 **Bolsistas** | [`cargo: bolsista`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+bolsista%22) | Desenvolvimento dedicado nas Zonas de Projeto, cumprimento de metas e revisão técnica. |
+| 🤝 **Voluntários** | [`cargo: voluntario`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+voluntario%22) | Colaboração em tasks das Zonas, desenvolvimento de apps, modelagem e testes. |
+
+### Fluxo de Contribuição
+1. Confira as [Issues abertas](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues) filtrando pela sua **Zona de Projeto** (`zona: ...`) e pelo seu **Cargo** (`cargo: ...`).
 2. Crie uma branch para sua feature ou documentação (`git checkout -b feat/nome-da-feature`).
 3. Faça commits claros seguindo boas práticas (`git commit -m "feat(modulo): descrição da mudança"`).
 4. Envie sua branch (`git push origin feat/nome-da-feature`) e abra um **Pull Request**.
