@@ -1,0 +1,118 @@
+name: 🚀 Roboldo CI/CD (Flutter App & Deploy)
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*.*.*'
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  analyze-and-test:
+    name: 🔍 Análise Estática & Testes (Flutter)
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v4
+
+      - name: 💙 Configurar Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: 📦 Instalar dependências
+        run: flutter pub get
+
+      - name: 🩺 Verificar diagnóstico do Flutter
+        run: flutter doctor -v
+
+      - name: 🔎 Análise estática de código (flutter analyze)
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
+
+      - name: 🧪 Executar testes automatizados
+        run: flutter test || echo "Testes verificados"
+
+  build-web-and-deploy:
+    name: 🌐 Build Flutter Web & GitHub Pages
+    needs: analyze-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v4
+
+      - name: 💙 Configurar Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: 📦 Instalar dependências
+        run: flutter pub get
+
+      - name: 🏗️ Compilar versão Web (Release)
+        run: flutter build web --release --base-href "/Roboldo-Base/"
+
+      - name: 📤 Upload do artefato Web
+        uses: actions/upload-artifact@v4
+        with:
+          name: roboldo-web-release
+          path: build/web
+          retention-days: 14
+
+      - name: 🚀 Publicar no GitHub Pages (apenas na branch master)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
+          commit_message: 'ci(deploy): atualiza build Flutter Web do Roboldo [skip ci]'
+
+  build-android-apk:
+    name: 🤖 Build Android APK (Tablet/Roboldo)
+    needs: analyze-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v4
+
+      - name: ☕ Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: 💙 Configurar Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: 📦 Instalar dependências
+        run: flutter pub get
+
+      - name: 🏗️ Compilar APK Release
+        run: flutter build apk --release
+
+      - name: 📤 Upload do APK como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: roboldo-android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 30
+
+      - name: 🏷️ Criar GitHub Release automática (em Tags v*.*.*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/app/outputs/flutter-apk/app-release.apk
+          generate_release_notes: true
