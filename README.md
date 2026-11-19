@@ -1,5 +1,9 @@
 # 🤖 Roboldo Base — Ecossistema do Robô Social Roboldo
 
+[![Roboldo CI/CD (Flutter App & Deploy)](https://github.com/ROBOLDO-UERN/Roboldo-Base/actions/workflows/roboldo-ci-cd.yml/badge.svg?branch=master)](https://github.com/ROBOLDO-UERN/Roboldo-Base/actions/workflows/roboldo-ci-cd.yml)
+[![RoboControl Studio CI](https://github.com/ROBOLDO-UERN/Roboldo-Base/actions/workflows/robocontrol-studio-ci.yml/badge.svg?branch=ambiente-configuracao)](https://github.com/ROBOLDO-UERN/Roboldo-Base/actions/workflows/robocontrol-studio-ci.yml)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 Bem-vindo ao **Roboldo Base**, o repositório central de software, arquitetura, aplicativos e controle de hardware do **Roboldo** — um robô social interativo desenvolvido no contexto do **Laboratório de Automação e Robótica (LAR / UERN)** voltado para educação, acessibilidade, interação humano-robô (IHR) e navegação autônoma.
 
 ---
