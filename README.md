@@ -115,32 +115,41 @@ Em seguida, acesse no navegador (Chrome ou Edge para suporte à **Web Serial API
 
 ---
 
-## 🗺️ Roadmap e Frentes de Trabalho (Issues)
+## 🧭 Zonas de Projetos e Roadmap (Issues)
 
-O planejamento evolutivo do projeto está organizado nas [Issues do repositório](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues):
+O trabalho de pesquisa e desenvolvimento do **Roboldo** está estruturado em **5 Zonas de Projetos (Grupos)** organizadas por [Milestones](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestones) e [Labels de Zona](https://github.com/ROBOLDO-UERN/Roboldo-Base/labels):
 
-- **Arquitetura & Sistema**:
-  - [#1](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/1) Definição da Arquitetura Modular (Core, HAL, Apps & Cloud)
-  - [#2](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/2) Especificação e Implementação do Roboldo SDK
-  - [#3](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/3) Gerenciador de Ciclo de Vida e Launcher de Apps (Roboldo Shell)
-- **Lojinha do Roboldo & Aplicativos**:
-  - [#4](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/4) Modelagem de Domínio e Banco de Dados da Loja
-  - [#5](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/5) Backend / API REST para Catálogo e Distribuição
-  - [#6](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/6) Design e Prototipação UI/UX da Loja
-  - [#7](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/7) Cliente da Loja no App Flutter
-  - [#8](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/8) Refatoração do Game *Perguntas e Respostas* para o padrão do SDK
-  - [#9](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/9) Novos Apps Core (Recepção/Boas-vindas, Controle Remoto e Telemetria)
-  - [#18](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/18) Normalização e Padronização dos Rostos e Expressões Faciais do Roboldo
-  - [#19](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/19) Módulo de Conversação Natural com IA (STT + LLM + Piper TTS & Expressões)
-- **SLAM, Movimentação & Hardware**:
-  - [#10](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/10) Arquitetura de Sensores e Pipeline de Mapeamento (LiDAR / Odometria / IMU)
-  - [#11](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/11) Módulo de Mapeamento e Localização (Occupancy Grid / SLAM)
-  - [#12](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/12) Visualização de Mapa em Tempo Real e Pontos de Interesse (POIs)
-  - [#13](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/13) Modelagem Cinemática, Controle PID de Motores e Odometria Física
-  - [#14](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/14) Planejamento de Trajetória (*Path Planning*) e Desvio de Obstáculos
-  - [#15](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/15) Sistema de Segurança Física, Parada de Emergência e Auto-Docking
-  - [#16](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/16) Modelagem Elétrica, Dimensionamento de Energia e Diagrama de Ligações
-  - [#17](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/17) Integração e Mapeamento dos Sensores de Toque do Roboldo
+### 🗺️ [Zona 1: SLAM & Navegação Autônoma](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/1) (`zona: slam`)
+- [#10](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/10) Arquitetura de Sensores e Pipeline de Mapeamento (LiDAR / Odometria / IMU)
+- [#11](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/11) Módulo de Mapeamento e Localização (Occupancy Grid / SLAM)
+- [#12](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/12) Visualização de Mapa em Tempo Real e Pontos de Interesse (POIs)
+- [#14](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/14) Planejamento de Trajetória (*Path Planning*) e Desvio de Obstáculos
+
+### 🗣️ [Zona 2: Voz & Expressividade](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/2) (`zona: voz`)
+- [#18](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/18) Normalização e Padronização dos Rostos e Expressões Faciais do Roboldo
+- [#21](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/21) Serviço Unificado de Síntese de Voz Offline (Piper TTS), Sincronia Labial (Lipsync) e Feedback Sonoro
+
+### 🧠 [Zona 3: Inteligência Artificial & IHR](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/3) (`zona: ia`)
+- [#19](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/19) Módulo de Conversação Natural com IA (STT + LLM + Piper TTS & Expressões)
+
+### ⚙️ [Zona 4: Mecânica, Elétrica & Hardware](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/4) (`zona: mecanica-hardware`)
+- [#13](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/13) Modelagem Cinemática, Controle PID de Motores e Odometria Física
+- [#15](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/15) Sistema de Segurança Física, Parada de Emergência e Auto-Docking
+- [#16](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/16) Modelagem Elétrica, Dimensionamento de Energia e Diagrama de Ligações
+- [#17](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/17) Integração e Mapeamento dos Sensores de Toque do Roboldo
+- [#20](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/20) Modelagem CAD 3D, Estrutura Física, Chassi e Suportes de Sensores do Roboldo
+
+### 🎮 [Zona 5: Gamificação, Apps & Lojinha](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/5) (`zona: gamificacao-apps`)
+- [#1](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/1) Definição da Arquitetura Modular (Core, HAL, Apps & Cloud)
+- [#2](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/2) Especificação e Implementação do Roboldo SDK
+- [#3](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/3) Gerenciador de Ciclo de Vida e Launcher de Apps (Roboldo Shell)
+- [#4](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/4) Modelagem de Domínio e Banco de Dados da Loja
+- [#5](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/5) Backend / API REST para Catálogo e Distribuição
+- [#6](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/6) Design e Prototipação UI/UX da Loja
+- [#7](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/7) Cliente da Loja no App Flutter
+- [#8](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/8) Refatoração do Game *Perguntas e Respostas* para o padrão do SDK
+- [#9](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/9) Novos Apps Core (Recepção/Boas-vindas, Controle Remoto e Telemetria)
+- [#22](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/22) Ecossistema de Jogos Educativos, Acessibilidade (TEA/CAA) e Dinâmicas Gamificadas no Roboldo
 
 ---
 
