@@ -63,7 +63,7 @@ jobs:
         run: flutter build web --release --base-href "/Roboldo-Base/"
 
       - name: 📤 Upload do artefato Web
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: roboldo-web-release
           path: build/web
@@ -104,7 +104,7 @@ jobs:
         run: flutter build apk --release
 
       - name: 📤 Upload do APK como artefato
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: roboldo-android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
