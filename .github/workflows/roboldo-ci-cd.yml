@@ -112,7 +112,7 @@ jobs:
 
       - name: 🏷️ Criar GitHub Release automática (em Tags v*.*.*)
         if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: build/app/outputs/flutter-apk/app-release.apk
           generate_release_notes: true
