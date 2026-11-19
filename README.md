@@ -75,7 +75,7 @@ flowchart TD
 #### Passos
 ```bash
 # Clonar o repositório
-git clone https://github.com/Misians/Roboldo-Base.git
+git clone https://github.com/ROBOLDO-UERN/Roboldo-Base.git
 cd Roboldo-Base
 
 # Instalar dependências
@@ -117,36 +117,36 @@ Em seguida, acesse no navegador (Chrome ou Edge para suporte à **Web Serial API
 
 ## 🗺️ Roadmap e Frentes de Trabalho (Issues)
 
-O planejamento evolutivo do projeto está organizado nas [Issues do repositório](https://github.com/Misians/Roboldo-Base/issues):
+O planejamento evolutivo do projeto está organizado nas [Issues do repositório](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues):
 
 - **Arquitetura & Sistema**:
-  - [#1](https://github.com/Misians/Roboldo-Base/issues/1) Definição da Arquitetura Modular (Core, HAL, Apps & Cloud)
-  - [#2](https://github.com/Misians/Roboldo-Base/issues/2) Especificação e Implementação do Roboldo SDK
-  - [#3](https://github.com/Misians/Roboldo-Base/issues/3) Gerenciador de Ciclo de Vida e Launcher de Apps (Roboldo Shell)
+  - [#1](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/1) Definição da Arquitetura Modular (Core, HAL, Apps & Cloud)
+  - [#2](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/2) Especificação e Implementação do Roboldo SDK
+  - [#3](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/3) Gerenciador de Ciclo de Vida e Launcher de Apps (Roboldo Shell)
 - **Lojinha do Roboldo & Aplicativos**:
-  - [#4](https://github.com/Misians/Roboldo-Base/issues/4) Modelagem de Domínio e Banco de Dados da Loja
-  - [#5](https://github.com/Misians/Roboldo-Base/issues/5) Backend / API REST para Catálogo e Distribuição
-  - [#6](https://github.com/Misians/Roboldo-Base/issues/6) Design e Prototipação UI/UX da Loja
-  - [#7](https://github.com/Misians/Roboldo-Base/issues/7) Cliente da Loja no App Flutter
-  - [#8](https://github.com/Misians/Roboldo-Base/issues/8) Refatoração do Game *Perguntas e Respostas* para o padrão do SDK
-  - [#9](https://github.com/Misians/Roboldo-Base/issues/9) Novos Apps Core (Recepção/Boas-vindas, Controle Remoto e Telemetria)
-  - [#18](https://github.com/Misians/Roboldo-Base/issues/18) Normalização e Padronização dos Rostos e Expressões Faciais do Roboldo
-  - [#19](https://github.com/Misians/Roboldo-Base/issues/19) Módulo de Conversação Natural com IA (STT + LLM + Piper TTS & Expressões)
+  - [#4](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/4) Modelagem de Domínio e Banco de Dados da Loja
+  - [#5](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/5) Backend / API REST para Catálogo e Distribuição
+  - [#6](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/6) Design e Prototipação UI/UX da Loja
+  - [#7](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/7) Cliente da Loja no App Flutter
+  - [#8](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/8) Refatoração do Game *Perguntas e Respostas* para o padrão do SDK
+  - [#9](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/9) Novos Apps Core (Recepção/Boas-vindas, Controle Remoto e Telemetria)
+  - [#18](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/18) Normalização e Padronização dos Rostos e Expressões Faciais do Roboldo
+  - [#19](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/19) Módulo de Conversação Natural com IA (STT + LLM + Piper TTS & Expressões)
 - **SLAM, Movimentação & Hardware**:
-  - [#10](https://github.com/Misians/Roboldo-Base/issues/10) Arquitetura de Sensores e Pipeline de Mapeamento (LiDAR / Odometria / IMU)
-  - [#11](https://github.com/Misians/Roboldo-Base/issues/11) Módulo de Mapeamento e Localização (Occupancy Grid / SLAM)
-  - [#12](https://github.com/Misians/Roboldo-Base/issues/12) Visualização de Mapa em Tempo Real e Pontos de Interesse (POIs)
-  - [#13](https://github.com/Misians/Roboldo-Base/issues/13) Modelagem Cinemática, Controle PID de Motores e Odometria Física
-  - [#14](https://github.com/Misians/Roboldo-Base/issues/14) Planejamento de Trajetória (*Path Planning*) e Desvio de Obstáculos
-  - [#15](https://github.com/Misians/Roboldo-Base/issues/15) Sistema de Segurança Física, Parada de Emergência e Auto-Docking
-  - [#16](https://github.com/Misians/Roboldo-Base/issues/16) Modelagem Elétrica, Dimensionamento de Energia e Diagrama de Ligações
-  - [#17](https://github.com/Misians/Roboldo-Base/issues/17) Integração e Mapeamento dos Sensores de Toque do Roboldo
+  - [#10](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/10) Arquitetura de Sensores e Pipeline de Mapeamento (LiDAR / Odometria / IMU)
+  - [#11](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/11) Módulo de Mapeamento e Localização (Occupancy Grid / SLAM)
+  - [#12](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/12) Visualização de Mapa em Tempo Real e Pontos de Interesse (POIs)
+  - [#13](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/13) Modelagem Cinemática, Controle PID de Motores e Odometria Física
+  - [#14](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/14) Planejamento de Trajetória (*Path Planning*) e Desvio de Obstáculos
+  - [#15](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/15) Sistema de Segurança Física, Parada de Emergência e Auto-Docking
+  - [#16](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/16) Modelagem Elétrica, Dimensionamento de Energia e Diagrama de Ligações
+  - [#17](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues/17) Integração e Mapeamento dos Sensores de Toque do Roboldo
 
 ---
 
 ## 🤝 Como Contribuir
 
-1. Confira as [Issues abertas](https://github.com/Misians/Roboldo-Base/issues) e verifique a frente de trabalho atribuída a você.
+1. Confira as [Issues abertas](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues) e verifique a frente de trabalho atribuída a você.
 2. Crie uma branch para sua feature ou documentação (`git checkout -b feat/nome-da-feature`).
 3. Faça commits claros seguindo boas práticas (`git commit -m "feat(modulo): descrição da mudança"`).
 4. Envie sua branch (`git push origin feat/nome-da-feature`) e abra um **Pull Request**.
